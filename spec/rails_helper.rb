@@ -17,6 +17,8 @@ Shoulda::Matchers.configure do |config|
 end
 
 RSpec.configure do |config|
+  config.include ActiveJob::TestHelper, type: :request
+  config.include ActiveJob::TestHelper, type: :model
   # Apelida 'it_has_behavior_of' para funcionar exatamente como 'it_should_behave_like'
   config.alias_it_should_behave_like_to :it_has_behavior_of
 

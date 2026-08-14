@@ -17,7 +17,7 @@ RSpec.describe User, type: :model do
       create(:user, email: 'tim.murray@runte.example')
       user = build(:user, email: 'TIM.MURRAY@RUNTE.EXAMPLE')
       expect(user).not_to be_valid
-      expect(user.errors[:email]).to include('has already been taken')
+      expect(user.errors[:email]).to include('já está em uso')
     end
   end
 

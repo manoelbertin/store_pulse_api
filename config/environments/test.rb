@@ -3,8 +3,11 @@
 # your test database is "scratch space" for the test suite and is wiped
 # and recreated between test runs. Don't rely on the data there!
 
+# config/environments/test.rb
 Rails.application.configure do
-  # Settings specified here will take precedence over those in config/application.rb.
+  # Usa o adaptador de teste para ActiveJob em vez de Sidekiq/Redis
+  config.active_job.queue_adapter = :test
+
 
   # While tests run files are not watched, reloading is not necessary.
   config.enable_reloading = false
