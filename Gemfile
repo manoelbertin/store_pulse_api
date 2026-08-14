@@ -75,7 +75,7 @@ gem "sidekiq", '~> 6.1.3'
 gem "sidekiq-scheduler", '~> 3.0.1'
 
 # HTTP Request
-gem 'httparty', '~> 0.18.1'
+gem 'httparty', '~> 0.24.2'
 
 gem "csv"
 gem "devise_token_auth"
