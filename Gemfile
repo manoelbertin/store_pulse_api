@@ -68,7 +68,7 @@ group :test do
 end
 
 # Validation
-gem 'cpf_cnpj', '~> 0.5.0'
+gem 'cpf_cnpj', '~> 1.1.0'
 
 # Delayed Jobs
 gem "sidekiq", '~> 6.1.3'
