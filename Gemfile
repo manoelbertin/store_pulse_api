@@ -72,7 +72,7 @@ gem 'cpf_cnpj', '~> 0.5.0'
 
 # Delayed Jobs
 gem "sidekiq", '~> 6.1.3'
-gem "sidekiq-scheduler", '~> 3.0.1'
+gem "sidekiq-scheduler", '~> 5.0.6'
 
 # HTTP Request
 gem 'httparty', '~> 0.18.1'
